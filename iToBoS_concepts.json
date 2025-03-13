@@ -1,0 +1,72 @@
+{ 
+  "irregular streaks": ["irregular streaks", "uneven streaks", "inconsistent streaks"],
+  "regular streaks": ["regular streaks", "uniform streaks", "consistent streaks"],
+
+  "typical pigment Network": ["typical pigment network", "regular pigment network"],
+  "atypical pigment Network": ["atypical pigment network", "irregular pigment network"],
+
+  "blue areas regression": ["blue regression", "blue fading area"],
+  "combinations of regression": ["combinations of regressions", "multiple regressions", "regression combinations"],
+  "white regression areas": ["white regression", "white fading area"],
+  "scar-like depigmentation": ["scar-like depigmentation", "scarring white regression"],
+  "peppering or granularity regression":[ "peppering regression","granularity regression", "dotted regression"],
+
+  "regular globules": ["regular globules", "uniform globule","typical globule"],
+  "irregular globules": ["irregular globules", "uneven globule", "atypical globule"],
+  "regular dots": ["regular dots", "uniform dots", "even dots", "typical dots"],
+  "irregular dots": ["irregular dots", "uneven dots", "atypical dots"],
+
+  "blue-white veil": ["blue-white veil", "bluish white area", "blue-whitish veil"],
+
+
+  "diffuse regular pigmentation": ["diffuse regular pigmentation", "patchy regular pigmentation"],
+  "diffuse irregular pigmentation": ["patchy irregular pigmentation", "diffuse irregular pigmentation"],
+  "localized regular Pigmentation": ["localized regular pigmentation", "locally consistent pigmentation"],
+  "localized irregular pigmentation": ["locally inconsistent pigmentation", "localized irregular pigmentation"],
+
+  "flat": ["flat"," level", "flat topped"],
+  "raised": ["elevated", "raised", "nodular", "nodule"],
+
+
+  "milky-red veil": ["milky-red veil", "red whitish area", "pink veil"],
+  "polymorphous vessel": ["polymorphous vessel"],
+  "corkscrew vessel": ["corkscrew vessel", "spiral vessel"],
+  "wreath vessel": ["wreath vessel", "circular vessel", "crown vessel"],
+  "within regression vessel": ["within regression vessel"],
+  "linear irregular vessel": ["linear irregular vessel", "linear uneven vessel"],
+  "comma shape Vessel": ["comma shape Vessel", "comma curved vessel", "comma-shaped Vessel"],
+  "hairpin shape vessel": ["hairpin vessel", "u-shaped vessel"],
+  "arborizing vessel": ["arborizing vessel", "branching vessel", "tree-like vessel"],
+  "dotted vessel": ["dotted vessel ", "speckled vessel"],
+  "serpentine vessel": ["wavy vessel", "snake-like vessel", "serpentine vessel"],
+  "coiled or glomerular vessel":[ "coiled vessel", "glomerular vessel"],
+
+  "leaf-like Structure": ["leaf-like pattern", "maple tree shape", "branching shape"],
+
+  "red": ["red color", "pink", "reddish", "red"],
+  "white": ["white color", "whitish", "white"],
+  "black": ["black color", "black"],
+  "light-brown": ["light brown color", "tan", "light brown"],
+  "dark-brown": ["dark brown color", "dark brown"],
+  "blue-gray": ["blue-gray color", "gray color", " blue color", " gray", "blue"],
+
+  "large blue-gray ovoid nests": ["blue-gray ovoids", "blue-gray ovoid nests", "blue ovoid nests"],
+
+  "regular border": ["regular border", "smooth border", "uniform border"],
+  "irregular border": ["irregular border", "abrupt border", "uneven border"],
+
+  "symmetric in both axes":[ "symmetrical", "symmetric", "fully symmetric", "symmetric in both axes"],
+  "symmetrical in one axis": ["semi-symmetrical", "semi-symmetric", "symmetrical in one axis"],
+  "asymmetrical": ["asymmetric", "uneven", "asymmetrical"],
+  
+  "Inflammation": ["redness", "swelling", "irritation", "abscess"],
+  "Milia-like Cyst": ["white cysts", "milia cysts"],
+  "Multiple Blue-gray Globule": ["blue-gray globules"],
+  "Parallel Pattern": ["parallel line", "pigmented line"],
+  "Ulceration":[ "ulcer", "ulcerated"],
+  "Structureless Areas": ["featureless area", "structureless area"],
+  "Blotches": ["blotch"],
+  "Artifact": ["artifact"],
+  "Hair": ["hair"], 
+  "Dermoscopy Ring": ["dermoscopy", "dark corners"]
+}

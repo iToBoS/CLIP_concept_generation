@@ -1,0 +1,186 @@
+{
+    "abscess": [
+      "abscess", "swollen", "pus-filled lump"
+    ],
+    "acuminate": [
+      "acuminate"
+    ],
+    "atrophy": [
+      "atrophic"
+    ],
+    "black": [
+      "black color", " black"
+    ],
+    "blue": [
+      "blue", "blue color"
+    ],
+    "brown (hyperpigmentation)": [
+      "hyperpigmented", " hyperpigmentation", " brown(hyperpigmentation)"
+    ],
+    "bulla": [
+      "bullae", " blister"
+    ],
+    "burrow": [
+      "scabies", " burrow"
+    ],
+    "comedo": [
+      "whitehead", " blackhead"
+    ],
+    "crust": [
+      "dried crust", " crust"
+    ],
+    "cyst": [
+      "cyst"
+    ],
+    "dome-shaped": [
+      "like dome"
+    ],
+    "erosion": [
+      "erosive", " erosion", "breakdown of the outer layers", " impetigo"
+    ],
+    "erythema": [
+      "redness", " erythematous"
+    ],
+    "excoriation": [
+      "excoriation"
+    ],
+    "exophytic/fungating": [
+      "fungating"
+    ],
+    "exudate": [
+      "exudate"
+    ],
+    "fissure": [
+      "dry and cracked skin"
+    ],
+    "flat topped": [
+      "flat topped"
+    ],
+    "friable": [
+      "friable"
+    ],
+    "gray": [
+      "gray"
+    ],
+    "induration": [
+      "edema", " oedema"
+    ],
+    "lichenification": [
+      "lichenification", "thickened and leathery"
+    ],
+    "macule": [
+      "freckle, macular", "lentigo", "macule"
+    ],
+    "nodule": [
+      "nodular", "cyst", "nodule"
+    ],
+    "papule": [
+      "papular"
+    ],
+    "patch": [
+      "hyperpigmented", " melasma", "vitiligo"
+    ],
+    "pedunculated": [
+      "pedunculated"
+    ],
+    "pigmented": [
+      "pigmented"
+    ],
+    "plaque": [
+      "plaque", "dermatitis", "psoriasis"
+    ],
+    "poikiloderma": [
+      "sun aging"
+    ],
+    "purple": [
+      "purple"
+    ],
+    "purpura/petechiae": [
+      "purpura"
+    ],
+    "pustule": [
+      "pustule"
+    ],
+    "salmon": [
+      "salmon patch"
+    ],
+    "scale": [
+      "flaky and scaly", "scaly", "hyperkeratosis"
+    ],
+    "scar": [
+      "scar, keloid scars", "hypertrophic scars", "contractures scars", "acnescars scars"
+    ],
+    "sclerosis": [
+      "scleroderma", "crest syndrome"
+    ],
+    "telangiectasia": [
+      "dilated or broken blood vessels"
+    ],
+    "translucent": [
+      "translucent", "this bump is translucent"
+    ],
+    "ulcer": [
+      "ulcer", "ulcerated"
+    ],
+    "umbilicated": [
+      "umbilicated"
+    ],
+    "vesicle": [
+      "vesicle", "fluid-containing"
+    ],
+    "warty/papillomatous": [
+      "warty and papillomatous"
+    ],
+    "wheal": [
+      "urticaria"
+    ],
+    "white(hypopigmentation)": [
+      "white (hypopigmentation)", "hypopigmentation"
+    ],
+    "xerosis": [
+      "dry skin, abnormally dry skin", "xerosis"
+    ],
+    "yellow": [
+      "yellow"
+    ],
+    "purple pen": [
+      "purple pen"
+    ],
+    "nail": [
+      "nail"
+    ],
+    "pinkish": [
+      "pinkish"
+    ],
+    "red": [
+      "red", "red color"
+    ],
+    "hair": [
+      "hair"
+    ],
+    "orange sticker": [
+      "orange sticker"
+    ],
+    "dermoscope border": [
+      "dermoscopy"
+    ],
+    "streaks": [
+      "streaks", "irregular streaks"
+    ],
+    "pigment network": [
+      "pigment network", "atypical pigment network"
+    ],
+  
+  "dots and globues": [
+    "dots and globules", "irregular dota", "irregular globules"
+  ],
+  "blue-white veil": [
+    "blue-white veil", "bluish white area", "whitish veil"
+  ],
+  "regression areas": ["regression areas", "fading areas", "regression"],
+  "regular border": ["regular border", "smooth border", "uniform border"],
+  "irregular border": ["irregular border", "abrupt border", "uneven border"]
+
+  
+
+}
