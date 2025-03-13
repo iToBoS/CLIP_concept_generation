@@ -30,9 +30,9 @@ docker run --rm -v $(pwd):/app conceptm
    cd CLIP_concept_generation
    ```
 2. Load the model and perform inference:
-   ```python
- python inference.py "path/to/dermoscopy_image.jpg"
-   ```
+```bash
+ python inference.py path/to/dermoscopy_image.jpg
+ ```
 ## Expected Output
 The model returns a dictionary with relevant dermatological concepts and their associated relevance scores:
 ```json
@@ -58,7 +58,6 @@ The model returns a dictionary with relevant dermatological concepts and their a
         "relevance": 0.7171644568443298
     },
     "text_description": "dermoscopic features detected in the lesion: linear irregular vessel, arborizing vessel, hairpin shape vessel, Parallel Pattern, Structureless Areas, regular streaks, serpentine vessel. colors detected in the lesion: white, red. "
-
 ```
 
 ## Acknowledgments
