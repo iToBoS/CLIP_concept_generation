@@ -20,6 +20,7 @@ start = time.time()
 os.environ["CUDA_VISIBLE_DEVICES"] = ""
 device = "cuda" if torch.cuda.is_available() else "cpu"
 model_api = "whylesion"
+threshold = 0.60
 #################################################################################################
 if len(sys.argv)>1:
         image_dir = sys.argv[1]
@@ -351,7 +352,7 @@ dermo_features =  [
     "diffuse irregular pigmentation",
     "localized regular Pigmentation",
     "localized irregular pigmentation",
-    "milky-red veil",
+    "milky-red areas",
     "polymorphous vessel",
     "corkscrew vessel",
     "wreath vessel",
@@ -376,7 +377,7 @@ dermo_features =  [
 ]
 elevation_features = ["flat","raised"]
 other_features = [ "Artifact", "Hair", "Dermoscopy Ring"]
-color_features = [ "red color","white color","black color","light-brown color","dark-brown color","blue-gray color"]
+color_features = [ "red","white","black","light-brown","dark-brown","blue-gray"]
 shape_features = ["symmetric in both axes","symmetrical in one axis","asymmetrical"]
 border_features = ["regular border", "irregular border"]
 
@@ -408,7 +409,7 @@ for i, image_name in enumerate(image_name_list):
   
     for item_key, item_data in sorted_concepts.items():
         relevance = item_data.get("relevance") 
-        if relevance is not None and relevance >= 0.60:  
+        if relevance is not None and relevance >= threshold:  
             if item_key in dermo_features:
                 dermo_detected.append(item_key)
 
