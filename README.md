@@ -29,10 +29,22 @@ docker run --rm -v $(pwd):/app conceptm
    git clone https://github.com/your-username/your-repo.git
    cd CLIP_concept_generation
    ```
-2. Load the model and perform inference:
+2. Enter the path to your data folder and perform inference:
 ```bash
  python inference.py path/to/dermoscopy_image.jpg
  ```
+If you leave the data path empy it will automatically read the images in the data folder.
+
+You can update the inference code in line 22 and 23 and use the different model architcture and threshold for the relevance score:
+```python
+model_api = "whylesion" #monet , clip
+threshold = 0.6
+```
+If you want to use your own concept(s) you can simply create a json file similar to what we have in ```iToBoS_concepts.json``` and update the code in line 385:
+```python
+concepts_dictionary = json.load(open("iToBoS_concepts.json", "r"))
+
+```
 ## Expected Output
 The model returns a dictionary with relevant dermatological concepts and their associated relevance scores:
 ```json
