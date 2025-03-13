@@ -13,12 +13,12 @@ Ensure you have the dependencies installed.
 ```bash
 pip install -r requirements.txt
 ```
-
+Alternativly you can create a docker file.
 ## Usage
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/your-repo.git
-   cd your-repo
+   cd CLIP_concept_generation
    ```
 2. Load the model and perform inference:
    ```python
