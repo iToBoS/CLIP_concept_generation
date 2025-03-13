@@ -13,7 +13,16 @@ Ensure you have the dependencies installed.
 ```bash
 pip install -r requirements.txt
 ```
-Alternativly you can create a docker file.
+## Docker Support
+
+This project includes a Dockerfile, allowing you to run the application inside a Docker container for a consistent runtime environment. To build and run the Docker container, use the following commands:
+```bash
+# Build the Docker image
+docker build -t conceptm .
+
+# Run the container
+docker run --rm -v $(pwd):/app conceptm
+```
 ## Usage
 1. Clone the repository:
    ```bash
@@ -53,7 +62,7 @@ The model returns a dictionary with relevant dermatological concepts and their a
 ```
 
 ## Acknowledgments
-This work is based on CLIP-based foundation models (MONET, whylesionclip and open-clip) for medical imaging applications. If you use this repository, consider citing relevant papers on CLIP and dermatology AI research.
+This work is based on CLIP-based foundation models ([MONET](https://github.com/suinleelab/MONET), [whylesionclip](https://github.com/YueYANG1996/KnoBo)  and [open-clip](https://github.com/openai/CLIP)) for medical imaging applications. If you use this repository, consider citing relevant papers on CLIP and dermatology AI research.
 
 
 
