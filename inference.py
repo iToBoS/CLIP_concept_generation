@@ -21,6 +21,7 @@ os.environ["CUDA_VISIBLE_DEVICES"] = ""
 device = "cuda" if torch.cuda.is_available() else "cpu"
 model_api = "whylesion"
 threshold = 0.60
+os.mkdir("output")
 #################################################################################################
 if len(sys.argv)>1:
         image_dir = sys.argv[1]
