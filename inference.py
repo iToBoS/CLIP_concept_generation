@@ -17,11 +17,12 @@ import argparse
  #sudo docker run -v $(pwd)/output:/app/output conceptm
  #python inference.py data
 start = time.time()
-os.environ["CUDA_VISIBLE_DEVICES"] = ""
+os.environ["CUDA_VISIBLE_DEVICES"] = "" #"MIG-fc49a16c-f2d9-52a0-a89c-85d123b90f28"
 device = "cuda" if torch.cuda.is_available() else "cpu"
 model_api = "whylesion"
 threshold = 0.60
-os.mkdir("output")
+if os.path.exists("output")==False:
+    os.mkdir("output")
 #################################################################################################
 if len(sys.argv)>1:
         image_dir = sys.argv[1]
@@ -398,8 +399,8 @@ for i, image_name in enumerate(image_name_list):
             prompt_ref_embedding_norm=concept_embedding["prompt_ref_embedding_norm"],
         )
 
-        results[concept] = {"value": concept.lower(), "relevance": float(concept_presence_score)}
-    sorted_concepts = dict(sorted(results.items(), key=lambda  item: item[1]['relevance'], reverse=True))
+        results[concept] = {"feature": concept.lower(), "value": concept.lower(), "relevance_score": float(concept_presence_score)}
+    sorted_concepts = dict(sorted(results.items(), key=lambda  item: item[1]['relevance_score'], reverse=True))
     #print(sorted_results)
     dermo_detected = []
     color_detected = []
@@ -409,7 +410,7 @@ for i, image_name in enumerate(image_name_list):
     other_detected = []
   
     for item_key, item_data in sorted_concepts.items():
-        relevance = item_data.get("relevance") 
+        relevance = item_data.get("relevance_score") 
         if relevance is not None and relevance >= threshold:  
             if item_key in dermo_features:
                 dermo_detected.append(item_key)
@@ -445,12 +446,28 @@ for i, image_name in enumerate(image_name_list):
     if text == "":
         text = "No textual features detected for this lesion."
     
+    
     sorted_concepts["text_description"] =  text
-       
-    #print(text)   
+    
+
+    features_list = [
+        {
+            "feature": item_data["feature"],
+            "value": item_data["value"],
+            "relevance_score": item_data["relevance_score"]
+        }
+        for key, item_data in sorted_concepts.items() if key != "text_description"
+    ]
+
+    # Create the final output dictionary
+    output_data = {
+        "features": features_list,
+        "text_description": sorted_concepts.get("text_description", "")
+    }
+    # Save JSON file
     json_filename = f"output/{image_name.split('.')[0]}_concept_scores.json"
     with open(json_filename, "w") as json_file:
-        json.dump(sorted_concepts, json_file, indent=4)
+        json.dump(output_data, json_file, indent=4)
         print(f"Results saved to {json_filename}")
 
 print(f"Time taken: {time.time()-start} seconds.")
