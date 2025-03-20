@@ -1,0 +1,72 @@
+{ 
+  "irregular streaks": ["streaks", "irregular"],
+  "regular streaks": ["streaks", "regular"],
+
+  "typical pigment Network": ["pigment_network","typical"],
+  "atypical pigment Network": ["pigment_network","atypical"],
+
+  "blue areas regression": ["regression_structure", "blue areas regression"],
+  "combinations of regression": ["regression_structure", "combinations of regressions"],
+  "white regression areas": ["regression_structure", "white regression area"],
+  "scar-like depigmentation": ["regression_structure","scar-like depigmentation"],
+  "peppering or granularity regression":["regression_structure", "peppering or granularity regression"],
+
+  "regular globules": ["globule", "regular globules"],
+  "irregular globules": ["globule","irregular globules"],
+  "regular dots": ["dots", "regular dots"],
+  "irregular dots": ["dots","irregular dots"],
+
+  "blue-white areas": ["blue_whitish_veil"],
+
+
+  "diffuse regular pigmentation": [ "pigmentation", "diffuse regular pigmentation"],
+  "diffuse irregular pigmentation": [ "pigmentation" ,"diffuse irregular pigmentation"],
+  "localized regular Pigmentation": [ "pigmentation" ,"localized regular pigmentation"],
+  "localized irregular pigmentation": [ "pigmentation" , "localized irregular pigmentation"],
+
+  "flat": ["elevation","flat"],
+  "raised": ["elevation", "raised"],
+
+
+  "milky-red areas": ["vascular_structure", "milky-red areas"],
+  "polymorphous vessel": ["vascular_structure","polymorphous vessel"],
+  "corkscrew vessel": ["vascular_structure","corkscrew vessel"],
+  "wreath vessel": ["vascular_structure","wreath vessel"],
+  "within regression vessel": ["vascular_structure","within regression vessel"],
+  "linear irregular vessel": ["vascular_structure","linear irregular vessel"],
+  "comma shape Vessel": ["vascular_structure", "comma shape vessel"],
+  "hairpin shape vessel": ["vascular_structure","hairpin vessel"],
+  "arborizing vessel": ["vascular_structure","arborizing vessel"],
+  "dotted vessel": ["vascular_structure","dotted vessel "],
+  "serpentine vessel": ["vascular_structure", "serpentine vessel"],
+  "coiled or glomerular vessel":[ "vascular_structure","coiled or glomerular vessel"],
+
+  "leaf-like Structure": ["leaf-like_structure"],
+
+  "red": ["color", "red"],
+  "white": ["color","white"],
+  "black": ["color", "black"],
+  "light-brown": ["color", "light-brown"],
+  "dark-brown": ["color","dark-brown"],
+  "blue-gray": ["color","blue-gray" ],
+
+  "large blue-gray ovoid nests": ["large_blue-gray_ovoid_nests"],
+
+  "regular border": ["border", "regular border"],
+  "irregular border": ["border","irregular border"],
+
+  "symmetric in both axes":[ "appearance", "symmetrical"],
+  "symmetrical in one axis": [  "appearance","symmetrical in one axis"],
+  "asymmetrical": [  "appearance","asymmetrical"],
+  
+  "Inflammation": ["inflammation"],
+  "Milia-like Cyst": ["milia-like cyst"],
+  "Multiple Blue-gray Globule": ["multiple blue-gray globule"],
+  "Parallel Pattern": ["parallel pattern"],
+  "Ulceration":[ "ulceration"],
+  "Structureless Areas": ["atructureless areas"],
+  "Blotches": ["blotch"],
+  "Artifact": ["artifact"],
+  "Hair": ["hair"], 
+  "Dermoscopy Ring": ["dermoscopy ring"]
+}
