@@ -407,7 +407,7 @@ for i, image_name in enumerate(image_name_list):
                     if concept_presence_score >= threshold:
                         results[concept] = {"feature": values[0], "value": "present", "relevance_score": float(concept_presence_score)}
                     else:
-                        results[concept] = {"feature": values[0], "value": "present", "relevance_score": float(concept_presence_score)}
+                        results[concept] = {"feature": values[0], "value": "absent", "relevance_score": float(concept_presence_score)}
 
     sorted_concepts = dict(sorted(results.items(), key=lambda  item: item[1]['relevance_score'], reverse=True))
     #print(sorted_results)
