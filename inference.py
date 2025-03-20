@@ -377,6 +377,7 @@ dermo_features =  [
     "Blotches"
 
 ]
+mapping = json.load(open("concept_mapping.json", "r"))
 elevation_features = ["flat","raised"]
 other_features = [ "Artifact", "Hair", "Dermoscopy Ring"]
 color_features = [ "red","white","black","light-brown","dark-brown","blue-gray"]
@@ -398,8 +399,16 @@ for i, image_name in enumerate(image_name_list):
             image_features_norm=image_features_norm,  # Use features for the current image
             prompt_ref_embedding_norm=concept_embedding["prompt_ref_embedding_norm"],
         )
+        for term , values in mapping.items():
+            if concept == term: 
+                try:   
+                    results[concept] = {"feature": values[0], "value": values[1], "relevance_score": float(concept_presence_score)}
+                except:
+                    if concept_presence_score >= threshold:
+                        results[concept] = {"feature": values[0], "value": "present", "relevance_score": float(concept_presence_score)}
+                    else:
+                        results[concept] = {"feature": values[0], "value": "absent", "relevance_score": float(concept_presence_score)}
 
-        results[concept] = {"feature": concept.lower(), "value": concept.lower(), "relevance_score": float(concept_presence_score)}
     sorted_concepts = dict(sorted(results.items(), key=lambda  item: item[1]['relevance_score'], reverse=True))
     #print(sorted_results)
     dermo_detected = []
