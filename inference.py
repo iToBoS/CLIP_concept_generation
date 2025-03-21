@@ -20,7 +20,7 @@ start = time.time()
 os.environ["CUDA_VISIBLE_DEVICES"] = "" #"MIG-fc49a16c-f2d9-52a0-a89c-85d123b90f28"
 device = "cuda" if torch.cuda.is_available() else "cpu"
 model_api = "whylesion"
-threshold = 0.60
+threshold = 0.70
 if os.path.exists("output")==False:
     os.mkdir("output")
 #################################################################################################
@@ -441,19 +441,19 @@ for i, image_name in enumerate(image_name_list):
 
     text = "" ""    
     if len(dermo_detected)>0:
-        text += f"dermoscopic features detected in the lesion: {', '.join(dermo_detected)}. "
+        text += f"**Dermoscopic features detected in the lesion:** {', '.join(dermo_detected)}. "
     if len(color_detected)>0:
-        text += f"colors detected in the lesion: {', '.join(color_detected)}. "
+        text += f"**Colors detected in the lesion:** {', '.join(color_detected)}. "
     if len(shape_detected)>0:
-        text += f"symmetry features: {', '.join(shape_detected)}. "
+        text += f"**Lesion appearance:** {', '.join(shape_detected)}. "
     if len(border_detected)>0:
-        text += f"the lesion has {border_detected[0]}. "
+        text += f"The lesion has {border_detected[0]}. "
     if len(elevation_detected)>0:
-        text += f"the lesion appears to be {elevation_detected[0]}. "
+        text += f"The lesion appears to be {elevation_detected[0]}. "
     if len(other_detected)>0:
-        text += f"other information detected in the lesion: {', '.join(other_detected)}. "
+        text += f"**Other information detected in the lesion:** {', '.join(other_detected)}. "
     if text == "":
-        text = "No textual features detected for this lesion."
+        text = "**No textual features detected for this lesion.**"
     
     
     sorted_concepts["text_description"] =  text
